@@ -17,7 +17,7 @@ sudo add-apt-repository \
 echo "makeing update again"
 sudo apt-get update
 echo "installing docker..."
-sudo apt-get install -y docker-ce
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
 echo "Ready for use docker wihout sudo"
