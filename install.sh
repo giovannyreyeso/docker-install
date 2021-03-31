@@ -1,6 +1,8 @@
 echo "makeing update.."
 sudo apt-get update
-echo "Install packages to allow apt to use a repository over HTTPS:"
+echo "
+
+packages to allow apt to use a repository over HTTPS:"
  sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
@@ -17,7 +19,7 @@ sudo add-apt-repository \
 echo "makeing update again"
 sudo apt-get update
 echo "installing docker..."
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
 echo "Ready for use docker wihout sudo"
